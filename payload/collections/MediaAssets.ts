@@ -1,7 +1,7 @@
 import { CollectionConfig } from 'payload/types';
 
 export const MediaAssets: CollectionConfig = {
-    slug: 'media-assets',
+    slug: 'media',
     access: {
         create: () => true,
         read: () => true,
