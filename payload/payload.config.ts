@@ -2,6 +2,9 @@ import { buildConfig } from 'payload/config';
 import path from 'path';
 import { Users } from './collections/Users';
 import { Pages } from './collections/Pages';
+import { Components } from './collections/Components';
+import { Projects } from './collections/Projects';
+import { MediaAssets } from './collections/MediaAssets';
 import { MainMenu } from './globals/MainMenu';
 import { cloudStorage } from '@payloadcms/plugin-cloud-storage';
 import { s3Adapter } from '@payloadcms/plugin-cloud-storage/s3';
@@ -24,7 +27,10 @@ export default buildConfig({
   collections: [
     Pages,
     Users,
-    Media
+    Media,
+    Projects,
+    MediaAssets,
+    Components
   ],
   globals: [
     MainMenu,
